@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bc70ab661c1066064c263e05ce09743e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bc70ab661c1066064c263e05ce09743e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bc70ab661c1066064c263e05ce09743e = L.map(
+                "map_bc70ab661c1066064c263e05ce09743e",
+                {
+                    center: [23.430304, 120.213045],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eb2f9e481fc521ffb385e806900fdd18 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_eb2f9e481fc521ffb385e806900fdd18.addTo(map_bc70ab661c1066064c263e05ce09743e);
+        
+    
+            var marker_f88718e4a546c08b29cc08195022acfa = L.marker(
+                [23.43463, 120.23902],
+                {
+}
+            ).addTo(map_bc70ab661c1066064c263e05ce09743e);
+        
+    
+            var icon_95df75191fd5dbf5bf7f4c573117e64b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_050a8dc99912dcb3f29e562a1f28898a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9da1ec1a7a7ddf0bb2cd007197e51cce = $(`<div id="html_9da1ec1a7a7ddf0bb2cd007197e51cce" style="width: 100.0%; height: 100.0%;">     <b>朴子雨量站 C0M650</b><br>     類型：雨量站<br>     縣市：嘉義縣<br>     經度：120.23902<br>     緯度：23.43463     </div>`)[0];
+                popup_050a8dc99912dcb3f29e562a1f28898a.setContent(html_9da1ec1a7a7ddf0bb2cd007197e51cce);
+            
+        
+
+        marker_f88718e4a546c08b29cc08195022acfa.bindPopup(popup_050a8dc99912dcb3f29e562a1f28898a)
+        ;
+
+        
+    
+    
+            marker_f88718e4a546c08b29cc08195022acfa.bindTooltip(
+                `<div>
+                     雨量站：C0M650 朴子
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f88718e4a546c08b29cc08195022acfa.setIcon(icon_95df75191fd5dbf5bf7f4c573117e64b);
+            
+    
+            var marker_ea9b0607e2053c132b3afba66136353a = L.marker(
+                [23.425978, 120.18707],
+                {
+}
+            ).addTo(map_bc70ab661c1066064c263e05ce09743e);
+        
+    
+            var icon_2d9336b1ea853ebe45822f0f262a40de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2618006a5de372d89e63c914eac2e1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d6dd79b7488b5c2b503a1f771bcac97 = $(`<div id="html_1d6dd79b7488b5c2b503a1f771bcac97" style="width: 100.0%; height: 100.0%;">     <b>107Q009東石西崙里栗仔崙</b><br>     類型：淹水感測器<br>     站點 ID：74249b35-891e-479f-ad77-34c6e7434789<br>     管理單位：水利署 第五河川分署<br>     代碼：3132015FL1070016<br>     地址：嘉義縣東石鄉157縣道317號路口電桿<br>     經度：120.18707<br>     緯度：23.425978     </div>`)[0];
+                popup_f2618006a5de372d89e63c914eac2e1a.setContent(html_1d6dd79b7488b5c2b503a1f771bcac97);
+            
+        
+
+        marker_ea9b0607e2053c132b3afba66136353a.bindPopup(popup_f2618006a5de372d89e63c914eac2e1a)
+        ;
+
+        
+    
+    
+            marker_ea9b0607e2053c132b3afba66136353a.bindTooltip(
+                `<div>
+                     淹水感測器：107Q009東石西崙里栗仔崙
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ea9b0607e2053c132b3afba66136353a.setIcon(icon_2d9336b1ea853ebe45822f0f262a40de);
+            
+    
+            var poly_line_5069c288f1b9f550a5934a1b6c135973 = L.polyline(
+                [[23.43463, 120.23902], [23.425978, 120.18707]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_bc70ab661c1066064c263e05ce09743e);
+        
+    
+            poly_line_5069c288f1b9f550a5934a1b6c135973.bindTooltip(
+                `<div>
+                     雨量站與淹水感測器距離關係
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_dc4ae2fc12ecf45ab05e806fab11aa42_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_eb2f9e481fc521ffb385e806900fdd18,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_dc4ae2fc12ecf45ab05e806fab11aa42 = L.control.layers(
+                layer_control_dc4ae2fc12ecf45ab05e806fab11aa42_layers.base_layers,
+                layer_control_dc4ae2fc12ecf45ab05e806fab11aa42_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_bc70ab661c1066064c263e05ce09743e);
+
+        
+</script>
+</html>
